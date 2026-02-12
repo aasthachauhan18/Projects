@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h2>Weather Info (India)</h2>
+    <input type="text" id="city" placeholder="Enter city" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <p id="result"></p>
+
+    <script>
+      const apiKey = "09100e1928778f5154440f7507783217";
+
+      function getWeather() {
+        let city = document.getElementById("city").value.trim();
+
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+
+            if (data.cod === 200) {
+              document.getElementById(
+                "result"
+              ).innerText = `Temperature in ${data.name}: ${data.main.temp}°C
+               | Weather: ${data.weather[0].description}`;
+            } else {
+              document.getElementById(
+                "result"
+              ).innerText = `Error: ${data.message}`;
+            }
+          })
+          .catch((error) => {
+            document.getElementById("result").innerText = "Network Error!";
+            console.error(error);
+          });
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

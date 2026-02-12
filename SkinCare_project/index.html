@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Navbar</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./assests/CSS/style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+
+               
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assests/Images/logo.png" alt="Logo"
+                        class="logo">
+                    <!-- <span class="brand-text ms-2">Tayra Beauty</span> -->
+                </a>
+
+                
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                
+                <div class="collapse navbar-collapse justify-content-center"
+                    id="navbarNav">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item"><a class="nav-link active"
+                                href="#">Homepage</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="product.html">PRODUCT
+                                        </a></li>
+                                <li><a class="dropdown-item" href="#">SINGLE PRODUCT
+                                        </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Page</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="#">About</a></li>
+                                        <li><a class="dropdown-item"
+                                        href="#">FAQ</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#">Blog</a></li>
+                                        <li><a class="dropdown-item"
+                                        href="#">SINGLE POST</a></li>
+                                        <li><a class="dropdown-item"
+                                        href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+               
+                <div class="d-flex align-items-center gap-3">
+                    <button class="icon-btn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <button class="cart-btn">
+                        $0.00
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    
+                    <div class="col-lg-6 hero-content">
+                        <span class="organic-tag">100% ORGANIC PRODUCT</span>
+
+                        <h1 class="hero-title">
+                            Everything Has<br>
+                            Beauty, But Not<br>
+                            Everyone Sees<br>
+                            It
+                        </h1>
+
+                        <p class="hero-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus,
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                        <div
+                            class="hero-buttons d-flex align-items-center gap-4">
+                            <a href="#" class="btn explore-btn">Explore More</a>
+                            <a href="#" class="video-link">
+                                <i class="bi bi-play-circle"></i> Our Video
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-6 text-center hero-image">
+                        <div class="image-bg">
+                            <img
+                                src="./assests/Images/young-girl-with-care-beautiful-healthy-clean-skin-2022-01-28-11-47-22-utc.png" loading="lazy"
+                                alt="Beauty Model" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    
+                    <div class="col-lg-6 about-image">
+                        <span
+                            class="badge-box">25+<br><small>products</small></span>
+                        <img src="./assests/Images/PrdSunscreenfront.png"
+                            alt="Product" class="img-fluid product-img">
+                    </div>
+
+                    
+                    <div class="col-lg-6 about-content">
+                        <span class="section-tag">ABOUT TASYA</span>
+
+                        <h2 class="about-title">
+                            We Use Pure & Natural Ingredients
+                        </h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Maecenas non
+                            maximus nisl. Vivamus imperdiet porttitor lorem.
+                        </p>
+
+                        <p>
+                            Duis vitae fermentum urna. Maecenas venenatis
+                            feugiat arcu et sodales.
+                            Integer non ex vel ante vulputate porttitor praesent
+                            aliquet elit sit
+                            amet enim cursus, pharetra ornare nisl lacinia.
+                        </p>
+
+                        <div class="quote-box">
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.</p>
+                        </div>
+
+                        <div class="signature">Dyas Kardinal</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container text-center">
+
+                <span class="section-tag">OUR POPULAR</span>
+                <h2 class="section-title">We Provide The Best<br>For Your
+                    Skin</h2>
+                <p class="section-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus,
+                    luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+
+                <div class="row mt-5">
+
+                   
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <span class="sale-badge">Sale!</span>
+                            <img src="./assests/Images/product1.png"
+                                alt="Body Soap"
+                                class="product-img">
+                            <h4>Body Soap</h4>
+                            <p class="price">
+                                <del>$25.00</del> <span>$20.00</span>
+                            </p>
+                            <a href="#" class="btn cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <span class="sale-badge">Sale!</span>
+                            <img src="./assests/Images/product2.png" alt="Toner"
+                                class="product-img">
+                            <h4>Toner</h4>
+                            <p class="price">
+                                <del>$20.00</del> <span>$12.00</span>
+                            </p>
+                            <a href="#" class="btn cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                  
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-card">
+                            <span class="sale-badge">Sale!</span>
+                            <img src="./assests/Images/product3.png"
+                                alt="Night Cream"
+                                class="product-img">
+                            <h4>Night Cream</h4>
+                            <p class="price">
+                                <del>$15.00</del> <span>$10.00</span>
+                            </p>
+                            <a href="#" class="btn cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="choose-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Card -->
+                    <div class="col-lg-4 mb-4 choose-card">
+                        <div class="ingredient-card">
+                            <img src="./assests/Images/PrdMilk-Cleanser.png"
+                                alt="Milk Cleanser" class="img-fluid mb-3">
+
+                            <h5>What Is In Our Product ?</h5>
+
+                            <ul class="ingredient-list">
+                                <li>Pellentesque vulputate</li>
+                                <li>Curabitur vel diam</li>
+                                <li>Etiam accumsan elementum</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Middle Product -->
+                    <div class="col-lg-4 text-center mb-4 product-center">
+                        <img src="./assests/Images/PrdBody-Scrub.png"
+                            alt="Body Scrub" class="img-fluid main-product">
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-lg-4 choose-content">
+                        <span class="section-tag">WHY CHOOSE OUR PRODUCT
+                            ?</span>
+
+                        <h2 class="choose-title">
+                            We Use The Best & Natural Ingredients
+                        </h2>
+
+                        <p>
+                            Maecenas venenatis feugiat arcu et sodales. Integer
+                            non ex vel ante
+                            vulputate porttitor. Praesent aliquet elit sit amet
+                            enim cursus,
+                            pharetra ornare nisl lacinia.
+                        </p>
+
+                        <div class="trust-box">
+                            <h6>Trusted By Over 20k + Customer</h6>
+
+                            <div class="trust-row">
+                                <div class="avatars">
+                                    <img src="./assests/Images/Costumer1.png">
+                                    <!-- <img src="user2.jpg">
+              <img src="user3.jpg">
+              <img src="user4.jpg">
+              <img src="user5.jpg"> -->
+                                </div>
+
+                                <div class="rating">
+                                    <span>4.8</span>
+                                    <small>(12,000 Review)</small>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <p class="trust-text">
+                                Nunc non egestas purus. Duis viverra accumsan
+                                massa, non vulputate
+                                magna pharetra eu. Suspendisse potenti.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                   
+                    <div class="col-lg-6 offer-image">
+                        <img src="./assests/Images/offer_sec-model.png"
+                            alt="Offer Model" class="img-fluid">
+                    </div>
+
+                
+                    <div class="col-lg-6 offer-content">
+                        <h2 class="offer-title">
+                            Get 30% Cut For All Our<br>
+                            Product Until 31 October
+                        </h2>
+
+                        <p class="offer-note">
+                            Lorem ipsum dolor sit amet, <span>Condition
+                                Apply</span>
+                        </p>
+
+                        <p class="offer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus,
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                        <a href="#" class="btn offer-btn">
+                            <i class="bi bi-cart"></i> Shop Now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container">
+
+              
+                <div class="text-center mb-5">
+                    <span class="section-tag">NEW RELEASE</span>
+                    <h2 class="section-title">
+                        Beauty Lies In Healthy<br>
+                        Mind, Body And Spirit
+                    </h2>
+                    <p class="section-desc">
+                        Aenean porttitor, risus vitae semper ullamcorper, tellus
+                        felis sollicitudin mauris,
+                        eu mollis arcu sapien vel turpis.
+                    </p>
+                </div>
+
+               
+                <div class="row justify-content-center g-4">
+
+                   
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <img src="./assests/Images/PrdSunscreen-300x300.png"
+                                class="img-fluid product-img" alt>
+                            <h5>Sunscreen</h5>
+                            <p class="price">$15.00</p>
+                            <a href="#" class="btn cart-btn">ADD TO CART</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <img src="./assests/Images/PrdBody-Scrub (1).png"
+                                class="img-fluid product-img" alt>
+                            <h5>Body Scrub</h5>
+                            <p class="price">$20.00</p>
+                            <a href="#" class="btn cart-btn">ADD TO CART</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <img src="./assests/Images/PrdFace-Oil-300x300.png"
+                                class="img-fluid product-img" alt>
+
+                            <h5>Face Oil</h5>
+                            <p class="price">$15.00</p>
+                            <a href="#" class="btn cart-btn">ADD TO CART</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+
+               
+                <div class="text-center mb-5">
+                    <span class="section-tag">LATEST NEWS</span>
+                    <h2 class="section-title">Amazing Blog Post & Article</h2>
+                    <p class="section-desc">
+                        Aenean porttitor, risus vitae semper ullamcorper, tellus
+                        felis sollicitudin mauris,
+                        eu mollis arcu sapien vel turpis.
+                    </p>
+                </div>
+
+                
+                <div class="blog-wrapper">
+
+                    <div class="row g-4 align-items-stretch">
+
+                       
+                        <div class="col-lg-6">
+                            <div class="main-blog">
+                                <img src="./assests/Images/news_sec_model1.jpg"
+                                    class="img-fluid" alt>
+                                <div class="blog-content">
+                                    <h4>Kiss Your Thin Lips Goodbye!</h4>
+                                    <p>
+                                        Nam vel viverra libero, eget lobortis
+                                        est. Proin blandit enim augue,
+                                        non lobortis purus ultricies in.
+                                    </p>
+                                    <a href="#">READ MORE +</a>
+                                    <div class="blog-meta">
+                                        October 25, 2022 • No Comments
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                        <div class="col-lg-6">
+
+                            <div class="side-blog">
+                                <img src="./assests/Images/news_sec_model2.jpg"
+                                    alt>
+                                <div>
+                                    <h5>Enjoy The Stay, Love The Shine</h5>
+                                    <span>October 23, 2022 • No Comments</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</p>
+                                    <a href="#">READ MORE +</a>
+                                </div>
+                            </div>
+
+                            <div class="side-blog">
+                                <img src="./assests/Images/news_sec_model3.jpg"
+                                    alt>
+                                <div>
+                                    <h5>Sparkle On The Inside And Out</h5>
+                                    <span>October 23, 2022 • No Comments</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</p>
+                                    <a href="#">READ MORE +</a>
+                                </div>
+                            </div>
+
+                            <div class="side-blog">
+                                <img src="./assests/Images/news_sec_model4.jpg" loading="lazy"
+                                    alt>
+                                <div>
+                                    <h5>Inner Beauty Is The Best Beauty</h5>
+                                    <span>October 23, 2022 • No Comments</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</p>
+                                    <a href="#">READ MORE +</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section p-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                  
+                    <div class="col-lg-6">
+                        <span class="section-tag">FAQ</span>
+                        <h2 class="section-title">The Most Question We Had</h2>
+                        <p class="section-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut elit tellus,
+                            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                      
+                        <div class="accordion faq-accordion" id="faqAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        Nulla Diam Dui, Placerat At Mauris Vel
+                                    </button>
+                                </h2>
+                                <div id="faq1"
+                                    class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        Aenean porttitor, risus vitae semper
+                                        ullamcorper, tellus felis
+                                        sollicitudin mauris, eu mollis arcu
+                                        sapien vel turpis.
+                                        Suspendisse maximus, quam et lacinia
+                                        consequat.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Curabitur Pharetra Placerat Dui
+                                    </button>
+                                </h2>
+                                <div id="faq2"
+                                    class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Suspendisse maximus, quam et lacinia
+                                        consequat, sapien turpis
+                                        accumsan tellus, non efficitur sem dui
+                                        sit amet sem.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Donec Ultrices Tincidunt Enim Et Varius
+                                    </button>
+                                </h2>
+                                <div id="faq3"
+                                    class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        Phasellus lobortis lacus non sapien
+                                        efficitur, sed gravida
+                                        sapien facilisis.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                 
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <div class="faq-image">
+                            <img src="./assests/Images/faq_model.png"
+                                alt="FAQ Model" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row gy-4">
+
+                 
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand">
+                            <img src="./assests/Images/logo.png" alt="Tasya Beauty"
+                                class="footer-logo">
+                            <p>
+                                Suspendisse congue tincidunt nisi, in eleifend
+                                metus placerat eu.
+                                Nunc eget tristique nisi. Nunc a eros vitae
+                                magna bibendum tempus.
+                            </p>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-title">Quick Link</h5>
+                        <ul class="footer-list">
+                            <li><i class="bi bi-check"></i> About</li>
+                            <li><i class="bi bi-check"></i> Product</li>
+                            <li><i class="bi bi-check"></i> Search</li>
+                            <li><i class="bi bi-check"></i> Contact</li>
+                        </ul>
+                    </div>
+
+                  
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Information</h5>
+                        <ul class="footer-list">
+                            <li><i class="bi bi-check"></i> Terms &
+                                Conditions</li>
+                            <li><i class="bi bi-check"></i> Disclaimer</li>
+                            <li><i class="bi bi-check"></i> Support</li>
+                            <li><i class="bi bi-check"></i> FAQ</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Get In Touch</h5>
+                        <ul class="footer-contact">
+                            <li><i class="bi bi-geo-alt"></i> 99 Roving St.,
+                                Pku</li>
+                            <li><i class="bi bi-telephone"></i>
+                                +123-456-789</li>
+                            <li><i class="bi bi-envelope"></i>
+                                hello@awesomesite.com</li>
+                        </ul>
+
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="footer-bottom">
+                    <p>© Copyright 2022. All Rights Reserved.
+                        <span>Rometheme</span></p>
+                    <div class="footer-policy">
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">Terms of use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
